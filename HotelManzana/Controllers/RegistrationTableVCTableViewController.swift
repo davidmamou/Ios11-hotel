@@ -31,7 +31,8 @@ class RegistrationTableVCTableViewController: UITableViewController {
         CheckIndatePicker.minimumDate = midnightToday
         CheckIndatePicker.date = midnightToday
         
-        CheckOutDatePicker.minimumDate = CheckIndatePicker.date.addingTimeInterval(86400)
+        CheckOutDatePicker.minimumDate CheckIndatePicker.date.addingTimeInterval(86400)
+        
     }
     
     func updateDateViews () {
@@ -53,6 +54,13 @@ class RegistrationTableVCTableViewController: UITableViewController {
         print("Last name:\(lastName)")
         print("email:\(email)")
     }
+    
+    @IBAction func datePickerChanged(_ sender: UIDatePicker) {
+        updateDateViews()
+    }
+    
+    
+    
     
     
 }
