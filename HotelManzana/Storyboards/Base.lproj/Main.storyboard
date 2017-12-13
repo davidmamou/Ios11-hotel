@@ -249,7 +249,6 @@
                         <outlet property="checkInDateLbl" destination="6IQ-4N-D7M" id="wVe-IT-GiY"/>
                         <outlet property="emailTextField" destination="70z-XR-uNv" id="863-qq-eeA"/>
                         <outlet property="firstNameTextField" destination="v3J-1A-YAh" id="sMv-P0-aru"/>
-                        <outlet property="heckInDateLbl" destination="6IQ-4N-D7M" id="ojr-04-GXj"/>
                         <outlet property="lastNameTextField" destination="P6c-aO-D1H" id="QmP-oT-6GN"/>
                     </connections>
                 </tableViewController>
