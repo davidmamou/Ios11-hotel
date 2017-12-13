@@ -127,7 +127,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="QcT-gi-X2f">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="215.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="216"/>
                                                     <date key="date" timeIntervalSinceReferenceDate="534862673.60107398">
                                                         <!--2017-12-13 12:57:53 +0000-->
                                                     </date>
@@ -147,14 +147,48 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="j9J-12-gWQ" id="gr9-um-De5">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check-Out Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0YI-nL-hJk">
+                                                    <rect key="frame" x="32" y="11" width="124.5" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nov 24, 1937" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="us8-nf-zgX">
+                                                    <rect key="frame" x="242" y="11" width="101" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="us8-nf-zgX" secondAttribute="trailing" constant="16" id="Szb-Xn-cKw"/>
+                                                <constraint firstItem="0YI-nL-hJk" firstAttribute="leading" secondItem="gr9-um-De5" secondAttribute="leadingMargin" constant="16" id="X4i-XX-AeJ"/>
+                                                <constraint firstItem="us8-nf-zgX" firstAttribute="centerY" secondItem="0YI-nL-hJk" secondAttribute="centerY" id="Zus-o9-PVd"/>
+                                                <constraint firstItem="0YI-nL-hJk" firstAttribute="centerY" secondItem="gr9-um-De5" secondAttribute="centerY" id="e8L-l7-nJy"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="92B-yg-jFg">
-                                        <rect key="frame" x="0.0" y="547.5" width="375" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="216" id="92B-yg-jFg">
+                                        <rect key="frame" x="0.0" y="547.5" width="375" height="216"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="92B-yg-jFg" id="Vu1-fM-iKb">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="215.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="a6y-aB-Suk">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="215.5"/>
+                                                    <date key="date" timeIntervalSinceReferenceDate="534862985.88991803">
+                                                        <!--2017-12-13 13:03:05 +0000-->
+                                                    </date>
+                                                </datePicker>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="a6y-aB-Suk" firstAttribute="leading" secondItem="Vu1-fM-iKb" secondAttribute="leading" id="8NY-uB-m0a"/>
+                                                <constraint firstAttribute="bottom" secondItem="a6y-aB-Suk" secondAttribute="bottom" id="Bgc-Hq-fdm"/>
+                                                <constraint firstAttribute="trailing" secondItem="a6y-aB-Suk" secondAttribute="trailing" id="SmW-p9-D2X"/>
+                                                <constraint firstItem="a6y-aB-Suk" firstAttribute="top" secondItem="Vu1-fM-iKb" secondAttribute="top" id="dz4-fx-4M4"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </cells>
@@ -162,7 +196,7 @@
                             <tableViewSection headerTitle="Section-3" id="Caf-Ye-YmL">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="nXt-Rj-6h1">
-                                        <rect key="frame" x="0.0" y="647.5" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="819.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nXt-Rj-6h1" id="tMe-N8-AqN">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
@@ -174,7 +208,7 @@
                             <tableViewSection headerTitle="Section-4" id="nIf-sc-piM">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="DCx-6r-6QM">
-                                        <rect key="frame" x="0.0" y="747.5" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="919.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DCx-6r-6QM" id="TZq-0B-ssZ">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
@@ -186,7 +220,7 @@
                             <tableViewSection headerTitle="Section-5" id="XeD-RE-q1p">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Eqb-up-NFE">
-                                        <rect key="frame" x="0.0" y="847.5" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="1019.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Eqb-up-NFE" id="D7h-xI-Hfx">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
