@@ -9,9 +9,10 @@
 import UIKit
 
 class RegistrationTableVCTableViewController: UITableViewController {
-    @IBOutlet weak var firstName: UITextField!
-    @IBOutlet weak var lastName: UITextField!
-    @IBOutlet weak var email: UITextField!
+    @IBOutlet weak var firstNameTextField: UITextField!
+    @IBOutlet weak var lastNameTextField: UITextField!
+    @IBOutlet weak var emailTextField: UITextField!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +24,16 @@ class RegistrationTableVCTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
-
+    @IBAction func doneBarButtonItem(_ sender: Any)
+    {
+        let firstName = firstNameTextField.text ?? ""
+        let lastName = lastNameTextField.text ?? ""
+        let email = emailTextField.text ?? ""
+        
+        print("first Name:\(firstName)")
+        print("Last name:\(lastName)")
+        print("email:\(email)")
+    }
+    
     
 }
