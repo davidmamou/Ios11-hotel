@@ -13,7 +13,7 @@ class RegistrationTableVCTableViewController: UITableViewController {
     @IBOutlet weak var lastNameTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
     
-    @IBOutlet weak var heckInDateLbl: UILabel!
+    @IBOutlet weak var checkInDateLbl: UILabel!
     @IBOutlet weak var CheckIndatePicker: UIDatePicker!
     @IBOutlet weak var CheckOutLbl: UILabel!
     @IBOutlet weak var CheckOutDatePicker: UIDatePicker!
@@ -27,6 +27,15 @@ class RegistrationTableVCTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+    }
+    
+    func updateDateViews () {
+        let dateFormatteur = DateFormatter()
+        
+        dateFormatteur.dateStyle = .medium
+        
+        checkInDateLbl.text = dateFormatteur.string(from: CheckIndatePicker.date)
+        CheckOutLbl.text = dateFormatteur.string(from: CheckOutDatePicker.date)
     }
 
     @IBAction func doneBarButtonItem(_ sender: Any)
