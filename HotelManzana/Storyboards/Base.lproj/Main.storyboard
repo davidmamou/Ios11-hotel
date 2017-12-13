@@ -177,7 +177,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="a6y-aB-Suk">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="215.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="216"/>
                                                     <date key="date" timeIntervalSinceReferenceDate="534862985.88991803">
                                                         <!--2017-12-13 13:03:05 +0000-->
                                                     </date>
@@ -243,8 +243,12 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="CheckIndatePicker" destination="QcT-gi-X2f" id="ldg-MF-VmH"/>
+                        <outlet property="CheckOutDatePicker" destination="a6y-aB-Suk" id="26M-nF-Znj"/>
+                        <outlet property="CheckOutLbl" destination="us8-nf-zgX" id="1My-Hw-uj8"/>
                         <outlet property="emailTextField" destination="70z-XR-uNv" id="863-qq-eeA"/>
                         <outlet property="firstNameTextField" destination="v3J-1A-YAh" id="sMv-P0-aru"/>
+                        <outlet property="heckInDateLbl" destination="6IQ-4N-D7M" id="ojr-04-GXj"/>
                         <outlet property="lastNameTextField" destination="P6c-aO-D1H" id="QmP-oT-6GN"/>
                     </connections>
                 </tableViewController>
