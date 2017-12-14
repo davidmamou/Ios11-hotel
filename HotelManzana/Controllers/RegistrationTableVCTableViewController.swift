@@ -152,4 +152,29 @@ class RegistrationTableVCTableViewController: UITableViewController {
             break
         }
     }
+    
+    func updateGuestView(){
+        
+        numberAdultsLbl.text = "\(Int(numberOfAdultsStepper.value))"
+        
+        numberOfChildrenLbl.text = "\(Int(numberOfChildrenStepper.value))"
+    }
+    
+    @IBAction func stepperChanged(_ sender: UIStepper)
+    {
+       updateGuestView()
+        
+        
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }
