@@ -356,10 +356,10 @@
             </objects>
             <point key="canvasLocation" x="393" y="150"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Select Room TableVC-->
         <scene sceneID="sbe-gV-pCx">
             <objects>
-                <tableViewController id="u7F-3e-2Y6" sceneMemberID="viewController">
+                <tableViewController id="u7F-3e-2Y6" customClass="SelectRoomTableVC" customModule="HotelManzana" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="c0G-QO-u6M">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
