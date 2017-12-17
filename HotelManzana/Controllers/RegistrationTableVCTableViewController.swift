@@ -23,6 +23,7 @@ class RegistrationTableVCTableViewController: UITableViewController {
     @IBOutlet weak var numberOfChildrenLbl: UILabel!
     @IBOutlet weak var numberOfChildrenStepper: UIStepper!
     
+    @IBOutlet weak var wifiSwitch: UISwitch!
     
     
     
@@ -75,6 +76,11 @@ class RegistrationTableVCTableViewController: UITableViewController {
         let checkInDate = CheckIndatePicker.date
         let checkOutdate = CheckOutDatePicker.date
         
+        let numberOfAdults = numberAdultsLbl.text
+        let numberOfChildren = numberOfChildrenLbl.text
+        
+        let hasWifi = wifiSwitch.isOn
+        
         print("first Name:\(firstName)")
         print("Last name:\(lastName)")
         print("email:\(email)")
@@ -82,6 +88,10 @@ class RegistrationTableVCTableViewController: UITableViewController {
         print("check in date:\(checkInDate)")
         print("check out date:\(checkOutdate)")
         
+        print("numberOfAdult:\(numberOfAdults)")
+        print("numberOfChildren:\(numberOfChildren)")
+        
+        print("wifi:\(hasWifi)")
    
     }
     
@@ -167,12 +177,8 @@ class RegistrationTableVCTableViewController: UITableViewController {
         
     }
     
-    
-    
-    
-    
-    
-    
+    @IBAction func wifiSwitchChanged(_ sender: UISwitch) {
+    }
     
     
     
