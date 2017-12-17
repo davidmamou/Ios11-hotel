@@ -64,7 +64,6 @@
 				E35B777C1FE1216600E6BBFC /* Models */,
 				E35B776F1FE1213F00E6BBFC /* Assets.xcassets */,
 				E35B77741FE1213F00E6BBFC /* Info.plist */,
-				97FAC8D11FE6978300D77228 /* SelectRoomTableVC.swift */,
 			);
 			path = HotelManzana;
 			sourceTree = "<group>";
@@ -80,6 +79,7 @@
 		E35B777D1FE1217100E6BBFC /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				97FAC8D11FE6978300D77228 /* SelectRoomTableVC.swift */,
 				97D51CAE1FE15301008A35CA /* RegistrationTableVCTableViewController.swift */,
 			);
 			path = Controllers;
